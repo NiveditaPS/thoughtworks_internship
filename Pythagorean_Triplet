@@ -1,0 +1,24 @@
+PythagoreanTriplet(int a, int b, int c)
+    {
+        tr.add(a,b,c);
+    }
+    PythagoreanTriplet makeTripletsList()
+    {
+        //int a=0;int b=0;int c = 0;
+        PythagoreanTriplet list=new ArrayList<Integer,Integer,Integer>(){{
+            add(3, 4, 5);
+            } };;
+        int m = 2;
+        while (c < limit) {
+            for (int n = 1; n < m; ++n) {
+                a = m * m - n * n;
+                b = 2 * m * n;
+                c = m * m + n * n;
+ 
+                if (c > limit)
+                    break;
+            }
+            if((a+b+c)==limit)
+            {
+                m++;
+            }
